@@ -10,7 +10,7 @@ let displayInput2 = document.getElementById("inputNumber2");
 
 let lo0pArray = [];
 
-let l = 0;
+// let l = 0;
 
 function looop() {
 	// for fügt immer die Anzahl "o" hinzu wie die neue Zahl darstellt
@@ -20,11 +20,11 @@ function looop() {
 	//     console.log(o);
 	// }
 	output.innerHTML = "";
-	for (let l = 1; l < input.value; l++) {
+	for (let l = 0; l < input.value; l++) {
 		loopArray.push("o");
-		displayInput.innerHTML = l;
+		
 	}
-
+	displayInput.innerHTML = input.value;
 	output.innerHTML = "L" + loopArray.join("") + "p";
 	loopArray = [];
 

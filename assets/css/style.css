@@ -29,6 +29,10 @@ form {
 }
 input {
     accent-color: var(--secondaryColor);
+    transition: all 750ms;
+}
+form:first-of-type input {
+    width: 90%;
 }
 p {
     font-size: 1.4rem;
@@ -68,5 +72,11 @@ a:hover {
     }
     form {
         height: 45.5vh;
+    }
+    span {
+        display: none;
+    }
+    form:first-of-type input {
+        width: 100%;
     }
 }
