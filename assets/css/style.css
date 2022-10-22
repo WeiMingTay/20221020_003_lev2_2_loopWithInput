@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primaryColor: #fff;
+    --secondaryColor: #D70014
+}
+body {
+    background-image: url(../img/818BdnWWabL._AC_SL1500_.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: all 750ms;
+}
+form {
+    background-color: var(--primaryColor);
+    border: 2px solid var(--secondaryColor);
+    height: 35vh;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+    padding-top: 3rem;
+    transition: all 1000ms;
+}
+input {
+    accent-color: var(--secondaryColor);
+}
+p {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    transition: all 750ms;
+    word-wrap: break-word;
+}
+a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 5px 0 0 0;
+}
+a:hover {
+    text-decoration: underline;
+}
+@media (min-width:900px) {
+    p {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width:900px) and (min-width:600px) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:600px){
+    p {
+        font-size: 1rem;
+    }
+    body {
+        padding: .2rem;
+    }
+    form {
+        height: 45.5vh;
+    }
+}
